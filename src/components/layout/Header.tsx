@@ -119,7 +119,7 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 h-full w-64 sm:w-80 bg-white shadow-2xl z-[70] lg:hidden overflow-y-auto"
+              className="fixed top-0 right-0 h-full w-64 sm:w-80 bg-white shadow-2xl z-50 lg:hidden overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col h-full">

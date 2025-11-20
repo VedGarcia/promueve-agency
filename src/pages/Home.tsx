@@ -31,8 +31,28 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 bg-linear-to-br from-violet-50 to-white">
-        <div className="container mx-auto px-6">
+      <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
+        {/* Animated Gradient Background */}
+        <motion.div
+          className="absolute inset-0"
+          animate={{
+            backgroundPosition: ['0% 0%', '100% 100%', '0% 0%'],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+          style={{
+            background: 'linear-gradient(135deg, #7c3aed 0%, #5b21b6 25%, #6d28d9 50%, #8b5cf6 75%, #7c3aed 100%)',
+            backgroundSize: '200% 200%',
+          }}
+        />
+        
+        {/* Overlay for depth */}
+        <div className="absolute inset-0 bg-linear-to-b from-violet-900/20 to-violet-800/40" />
+        
+        <div className="container mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,16 +63,16 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6"
             >
               Transformamos tu{' '}
-              <span className="text-violet-600">presencia digital</span>
+              <span className="text-violet-200">presencia digital</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 px-4"
+              className="text-base sm:text-lg md:text-xl text-violet-100 mb-6 sm:mb-8 px-4"
             >
               Agencia de marketing digital especializada en hacer crecer tu negocio
               con estrategias innovadoras y resultados medibles.
@@ -67,7 +87,7 @@ const Home = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-violet-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg shadow-lg hover:bg-violet-700 transition-colors w-full sm:w-auto"
+                  className="bg-white text-violet-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg shadow-lg hover:bg-violet-50 transition-colors w-full sm:w-auto"
                 >
                   Nuestros Servicios
                 </motion.button>
@@ -76,7 +96,7 @@ const Home = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-white text-violet-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg border-2 border-violet-600 hover:bg-violet-50 transition-colors w-full sm:w-auto"
+                  className="bg-violet-800/80 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg border-2 border-white/30 hover:bg-violet-700/80 transition-colors w-full sm:w-auto backdrop-blur-sm"
                 >
                   Ver Cursos
                 </motion.button>
