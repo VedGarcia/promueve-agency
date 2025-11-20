@@ -23,13 +23,14 @@ const Header = () => {
   };
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md"
-    >
-      <nav className="container mx-auto px-4 sm:px-6 py-4">
+    <>
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md"
+      >
+        <nav className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -96,6 +97,7 @@ const Header = () => {
           </motion.button>
         </div>
       </nav>
+      </motion.header>
 
       {/* Mobile Menu */}
       <AnimatePresence>
@@ -107,7 +109,7 @@ const Header = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm lg:hidden z-[60]"
+              className="fixed inset-0 bg-white/10 backdrop-blur-sm lg:hidden z-50"
               onClick={closeMenu}
             />
 
@@ -174,7 +176,7 @@ const Header = () => {
           </>
         )}
       </AnimatePresence>
-    </motion.header>
+    </>
   );
 };
 
