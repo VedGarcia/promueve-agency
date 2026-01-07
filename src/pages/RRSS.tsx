@@ -137,7 +137,7 @@ const RRSS = () => {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center px-4">
               <motion.a
-                href="mailto:contacto@promueve-agency.com"
+                href="mailto:contacto@promueve-agencia.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-violet-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-violet-700 transition-colors w-full sm:w-auto"

@@ -34,7 +34,7 @@ const Footer = () => {
             transition={{ delay: 0.1 }}
           >
             <h3 className="text-xl sm:text-2xl font-bold text-violet-600 mb-3 sm:mb-4">
-              Promueve Agency
+              Promueve Agencia
             </h3>
             <p className="text-sm sm:text-base text-gray-400">
               Tu agencia de marketing digital de confianza. Transformamos ideas en resultados.
@@ -93,7 +93,7 @@ const Footer = () => {
           transition={{ delay: 0.4 }}
           className="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400"
         >
-          <p className="text-xs sm:text-sm">&copy; {currentYear} Promueve Agency. Todos los derechos reservados.</p>
+          <p className="text-xs sm:text-sm">&copy; {currentYear} Promueve Agencia. Todos los derechos reservados.</p>
         </motion.div>
       </div>
     </motion.footer>

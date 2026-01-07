@@ -280,7 +280,7 @@ const CourseDetail = () => {
                   <div className="flex-shrink-0 w-10 h-10 bg-violet-600 text-white rounded-full flex items-center justify-center font-bold mr-4">
                     {index + 1}
                   </div>
-                  <p className="text-gray-800 text-lg pt-2">{module}</p>
+                  <p className="text-gray-800 text-base sm:text-lg pt-2">{module}</p>
                 </motion.div>
               ))}
             </div>
@@ -311,7 +311,7 @@ const CourseDetail = () => {
                   className="flex items-center p-4 bg-white rounded-lg shadow"
                 >
                   <span className="text-violet-600 text-2xl mr-4">✓</span>
-                  <p className="text-gray-800 text-lg">{requirement}</p>
+                  <p className="text-gray-800 text-base sm:text-lg">{requirement}</p>
                 </motion.div>
               ))}
             </div>

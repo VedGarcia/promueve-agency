@@ -64,16 +64,16 @@ const About = () => {
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Nuestra Historia</h2>
               <p className="text-gray-600 mb-3 sm:mb-4 text-base sm:text-lg">
-                Fundada con la visión de democratizar el marketing digital, Promueve Agency
+                Fundada con la visión de democratizar el marketing digital, Promueve Agencia
                 nació de la necesidad de ofrecer soluciones accesibles y efectivas para empresas
                 de todos los tamaños.
               </p>
-              <p className="text-gray-600 mb-4 text-lg">
+              <p className="text-gray-600 mb-4 text-base sm:text-lg">
                 A lo largo de los años, hemos crecido junto a nuestros clientes, adaptándonos
                 a las constantes evoluciones del mercado digital y manteniéndonos a la vanguardia
                 de las mejores prácticas.
               </p>
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-600 text-base sm:text-lg">
                 Hoy, somos reconocidos por nuestra capacidad de transformar ideas en resultados
                 tangibles, siempre con un enfoque en la innovación y la excelencia.
               </p>

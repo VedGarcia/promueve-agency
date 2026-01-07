@@ -249,7 +249,7 @@ const ServiceDetail = () => {
                 >
                   <div className="flex items-start">
                     <span className="text-violet-600 text-3xl mr-4">🎯</span>
-                    <p className="text-gray-800 text-lg">{benefit}</p>
+                    <p className="text-gray-800 text-base sm:text-lg">{benefit}</p>
                   </div>
                 </motion.div>
               ))}
@@ -284,7 +284,7 @@ const ServiceDetail = () => {
                     {index + 1}
                   </div>
                   <div className="flex-1 pt-2">
-                    <p className="text-gray-800 text-lg">{step}</p>
+                    <p className="text-gray-800 text-base sm:text-lg">{step}</p>
                   </div>
                 </motion.div>
               ))}

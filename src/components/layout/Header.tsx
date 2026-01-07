@@ -36,8 +36,8 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link to="/" className="text-xl sm:text-2xl font-bold text-violet-600">
-              Promueve Agency
+            <Link to="/" className="text-lg sm:text-2xl font-bold text-violet-600">
+              Promueve Agencia
             </Link>
           </motion.div>
 
