@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useParams, Link } from 'react-router-dom';
-import { Course } from '../components/courses/CourseCard';
+import type { Course } from '../components/courses/CourseCard';
 
 const CourseDetail = () => {
   const { id } = useParams<{ id: string }>();

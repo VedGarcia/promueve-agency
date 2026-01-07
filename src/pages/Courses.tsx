@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import CourseCard, { Course } from '../components/courses/CourseCard';
+import CourseCard, { type Course } from '../components/courses/CourseCard';
 
 const Courses = () => {
   const courses: Course[] = [

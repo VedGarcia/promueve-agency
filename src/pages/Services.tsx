@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import ServiceCard, { Service } from '../components/services/ServiceCard';
+import ServiceCard, { type Service } from '../components/services/ServiceCard';
 
 const Services = () => {
   const services: Service[] = [

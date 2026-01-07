@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useParams, Link } from 'react-router-dom';
-import { Service } from '../components/services/ServiceCard';
+import type { Service } from '../components/services/ServiceCard';
 
 const ServiceDetail = () => {
   const { id } = useParams<{ id: string }>();
