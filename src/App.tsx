@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
@@ -12,6 +13,8 @@ import RRSS from './pages/RRSS';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
+
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="grow">
